@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -q production
+#PBS -N CUDAJob
+#PBS -l select=1:ncpus=1:ngpus=1
+#PBS -l place=free
+#PBS -V
+
+# Find out name of master execution host (compute node)
+echo -n ">>>> PBS Master compute node is: "
+hostname
+
+# You must explicitly change to the working directory in PBS
+cd $PBS_O_WORKDIR
+
+echo ">>>> One-line CUDA Thrust monte-carlo ..."
+echo ""
+./ThrustMonteCarloOneLine
+echo ""
+echo ">>>> End   One-line CUDA Thrust monte-carlo ..."
