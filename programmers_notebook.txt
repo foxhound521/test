@@ -1,0 +1,23 @@
+###Phase 1 - Explore the data. ###
+Brainstorm attack plan
+Test spark code
+Run some basic parsing algorithms
+Run some basic correlations 
+
+
+
+
+###Phase 2 - Programming###
+
+
+
+
+
+###Phase 3# - Analysis###
+
+
+
+
+
+
+###Phase 4 - Insights###
